@@ -1,0 +1,6 @@
+{
+  "name": "Verve Atelier — Modern Objects & Commerce",
+  "description": "Curated architectural furniture, precision acoustics, and artisanal objects with an integrated multi-method payment gateway, merchant product management dashboard, and high-thinking AI merchandising strategist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verve Atelier — Modern Objects & Enterprise Commerce</title>
+    <meta
+      name="description"
+      content="one8 Official Enterprise Storefront — Shop carbon-plated performance footwear, technical athleisure, signature fragrances, and pro gear with instant UPI & 3DS checkout."
+    />
+    <meta property="og:title" content="Verve Atelier — Modern Objects & Enterprise Commerce" />
+    <meta
+      property="og:description"
+      content="one8 Official Enterprise Storefront — Shop carbon-plated performance footwear, technical athleisure, signature fragrances, and pro gear with instant UPI & 3DS checkout."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="one8 Official Store — Footwear, Athleisure & Fragrances" />
+    <meta
+      name="twitter:description"
+      content="Engineered for relentless pace. Shop one8 footwear, activewear, and fragrances."
+    />
+    <meta name="theme-color" content="#0A0A0B" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "one8 Official Store",
+            "description": "High-performance athletic footwear, technical activewear, signature fragrances, and pro travel gear.",
+            "logo": "/icon.svg",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Mumbai",
+              "addressRegion": "MH",
+              "addressCountry": "IN"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "name": "one8 Official Store",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#F6F6F4] text-[#0A0A0B] antialiased selection:bg-[#E11D48] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
